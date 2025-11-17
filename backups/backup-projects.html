@@ -25,6 +25,24 @@
         overflow-x: hidden;
       }
 
+      #dvdSection {
+        position: relative;
+        background-color: black;
+        height: 700px;
+        overflow: hidden;
+      }
+
+      #dvdText {
+        position: absolute;
+        font-size: 80px;
+        font-family: "Arial Black", sans-serif;
+        color: white;
+        user-select: none;
+        white-space: nowrap;
+        text-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+        transition: color 0.4s ease;
+      }
+
       .codespace {
         background-color: #2e2e2e;
         color: #ffffff;
@@ -68,7 +86,52 @@
 
 
 
-   
+    <!-- DVD code start -->
+    <section id="dvdSection">
+      <div id="dvdText">Projects.</div>
+    </section>
+
+
+    <script>
+      const dvd = document.getElementById('dvdText');
+      const section = document.getElementById('dvdSection');
+
+      let x = 100, y = 100;
+      let dx = 2.5;
+      let dy = 2.5;
+
+      function randomColor() {
+        return `hsl(${Math.random() * 360}, 100%, 70%)`;
+      }
+
+      function animate() {
+        const w = section.clientWidth;
+        const h = section.clientHeight;
+        const rect = dvd.getBoundingClientRect();
+
+        x += dx;
+        y += dy;
+
+        if (x <= 0 || x + rect.width >= w) {
+          dx = -dx;
+          dvd.style.color = randomColor();
+        }
+
+        if (y <= 0 || y + rect.height >= h) {
+          dy = -dy;
+          dvd.style.color = randomColor();
+        }
+
+        dvd.style.left = `${x}px`;
+        dvd.style.top = `${y}px`;
+
+        requestAnimationFrame(animate);
+      }
+
+      animate();
+    </script>
+    <!-- DVD code end -->
+
 
     <!-- Hero Section -->
     <section class="hero" style="background: white">
@@ -81,7 +144,6 @@
 
 
 <div class="project-divider"></div>
-<h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Project 1</h1>
 <!-- SDN Start -->
     <section class="project-info">
       <div class="info-container">
@@ -109,7 +171,7 @@
               to do it for me.
             </p>
 
-	    <br />
+
             <h4>Purpose</h4>
             <p>
               To explore and model relationships between perp data and their respective crime
@@ -193,34 +255,39 @@ print(data.head())
 
 
 <div class="project-divider"></div>
-<h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Project 2</h1>
-<!-- Motor Start -->
+
+<!-- SDN Start -->
     <section class="project-info">
       <div class="info-container">
         <div class="box left-box">
           <h4>Project Name</h4>
-          <p>Derelict Pit Bike Restoration</p>
+          <p>SDN Crime Analytic ML Model</p>
           <br />
 
 
             <h4>Project Type</h4>
-            <p>Mechanical Engineering</p>
+            <p>Software Engineering, Machine Learning, Flask Development, Python, HTML.</p>
             <br />
-	    
-            <h4>Skills</h4>
-	    <p>Welding, Machining, Cutting, CAD Design, Sprocket Ratio Arithmetic</p>
-	    <br />
 
             <h4>About</h4>
             <p>
-	      Worked closely with a skilled senior practical engineer on the restoration of a derelict pitbike which was found
-	      abandoned in a field, left to rot. 	
+              Utilized publicly available criminal data, released by the City of Los Angeles,
+              to build a machine learning model capable of predicting the type of crime being
+              committed based on diverse factors such as time, day, age, sex, location, and more.
+              This data includes every single crime committed from 2020 to 2025.
             </p>
- 	    <br />
+            <br />
+            <p>
+              With over 1 million entries, it would be physically impossible to compile and compare
+              the relationships between this data by hand, which is why I built a model from scratch
+              to do it for me.
+            </p>
 
             <h4>Purpose</h4>
             <p>
-              To develop and practice practical engineering skills such as welding and general metalworking.
+              To explore and model relationships between perp data and their respective crime
+              committed. Allowed me to explore machine-learning possibilities in a way I found
+              interesting.
             </p>
 
         </div>
