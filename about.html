@@ -1,79 +1,79 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About – Tegan Heffernan</title>
-    <link href="style.css" rel="stylesheet" />
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>About – Tegan Heffernan</title>
+<link href="style.css" rel="stylesheet" />
 
 
 <style>
-  .left-box {
-    margin-top: 75px;
-    margin-left: 150px;
-  }
+.left-box {
+margin-top: 75px;
+margin-left: 150px;
+}
 
-  .images-container {
-    margin-top: 0px;
-    margin-right: 100px;
-  
-  }
+.images-container {
+margin-top: 0px;
+margin-right: 100px;
+
+}
 
 </style>
 
 
 
 
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-2DNMZZ87LJ"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-2DNMZZ87LJ');
-    </script>
+<!-- Google tag (gtag.js) -->
+<script
+async
+src="https://www.googletagmanager.com/gtag/js?id=G-2DNMZZ87LJ"
+></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-2DNMZZ87LJ');
+</script>
 
 
 
-  <body>
-    <!-- Navigation -->
-    <nav id="navbar">
-      <div class="nav-container">
-        <a href="index.html" class="logo">HOME</a>
-        <div class="menu-toggle" id="menuToggle">
-          <span></span><span></span><span></span>
-        </div>
-        <ul class="nav-links" id="navLinks">
-          <li><a href="index.html" class="nav-link">HOME</a></li>
-          <li><a href="projects.html" class="nav-link">PROJECTS</a></li>
-        </ul>
-      </div>
-    </nav>
+<body>
+<!-- Navigation -->
+<nav id="navbar">
+<div class="nav-container">
+<a href="index.html" class="logo">HOME</a>
+<div class="menu-toggle" id="menuToggle">
+<span></span><span></span><span></span>
+</div>
+<ul class="nav-links" id="navLinks">
+<li><a href="index.html" class="nav-link">HOME</a></li>
+<li><a href="projects.html" class="nav-link">PROJECTS</a></li>
+</ul>
+</div>
+</nav>
 
 
 
 <!-- SDN Start -->
-    <!-- Two Column Section -->
-    <section class="project-info">
-      
-	<div class="info-container">
-        <div class="box left-box">
-          <h4>About Me:</h4>
-          <p>Hey there! <br><br> My name's Tegan, im an aspiring second-year systems engineer at the University of Guelph. <br><br> I've developed this website with the goal of displaying both the skills I've gained, as well as the projects in which I've applied them over my career in engineering so far. <br><br> I love all things technology, and dabble in a wide spread of engineering discplines such as computer, mechanical, and software engineering. </p>
-          <br />
-	
-          <h4>Interests:</h4>
-	  <p>Machine Learning, Artificial Intelligence, CAD Software Modelling, Computer & Server Building, Metalworking(Welding, Cutting, etc.), HTML, C, Java, Python.    
-        </div>
+<!-- Two Column Section -->
+<section class="project-info">
+
+<div class="info-container">
+<div class="box left-box">
+<h4>About Me:</h4>
+<p>Hey there! <br><br> My name is Tegan, and I'm an enthusiastic second-year systems engineering student at the University of Guelph. I’m passionate about technology, and my journey so far has involved exploring a diverse set of engineering fields including computer, mechanical, and software engineering. <br><br> This website is designed to highlight not only the skills I’ve acquired, but also how I have put them into practice through various projects during my academic journey and early engineering career. From hands-on design challenges to collaborative programming and problem-solving, you’ll find examples of both technical and soft skills on display.<br><br> What excites me most is working at the intersection of technology and real-world problem solving. Whether it’s automating a system via code, designing and optimizing mechanical components, or contributing to innovative software projects, I thrive on tackling complex challenges and learning new technologies.<br><br>My goal is to continue developing as a rounded engineer, expanding my skillset across domains and collaborating with others to create solutions. I hope that by sharing my work, I can connect and work with many other engineers.</p>
+<br />
+
+<h4>Interests:</h4>
+<p>Machine Learning, Artificial Intelligence, CAD Software Modelling, Computer & Server Building, Metalworking(Welding, Cutting, etc.), HTML, C, Java, Python.
+</div>
 
 
 <!-- Images Section -->
 <section class="images-section">
-  <br>
+<br>
 <div class="images-container">
-  <img src="images/profile.png" alt="Project Screenshot 1" class="project-image">
+<img src="images/profile.png" alt="Project Screenshot 1" class="project-image">
 </div>
 
 </section>
@@ -82,7 +82,7 @@
 
 <!-- Modal for viewing images -->
 <div id="imageModal">
-  <img class="modal-content" id="modalImage">
+<img class="modal-content" id="modalImage">
 </div>
 
 
@@ -91,20 +91,20 @@ const modal = document.getElementById('imageModal');
 const modalImg = document.getElementById('modalImage');
 
 document.querySelectorAll('.images-container img').forEach(img => {
-  img.addEventListener('click', () => {
-    modal.style.display = 'flex';  // show modal
-    modalImg.src = img.src;         // set clicked image
-  });
+img.addEventListener('click', () => {
+modal.style.display = 'flex'; // show modal
+modalImg.src = img.src; // set clicked image
+});
 });
 
 // Clicking anywhere on the overlay closes the modal
 modal.addEventListener('click', () => {
-  modal.style.display = 'none';
+modal.style.display = 'none';
 });
 </script>
 
 
 
 
-  </body>
+</body>
 </html>
