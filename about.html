@@ -1,146 +1,125 @@
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>About – Tegan Heffernan</title>
-<link href="style.css" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About – Tegan Heffernan</title>
+    <link href="style.css" rel="stylesheet" />
 
+    <style>
+        .left-box {
+            margin-top: 75px;
+            margin-left: 150px;
+        }
 
-<style>
-.left-box {
-margin-top: 75px;
-margin-left: 150px;
-}
+        .images-container {
+            margin-top: 30px;
+            margin-left: 150px;
+        }
 
-.images-container {
-margin-top: 30px;
-margin-left: 150px;
+        .download-button {
+            display: block;
+            width: 220px;
+            margin: 20px auto 0;
+            padding: 10px 20px;
+            background-color: #000000;
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-align: center;
+        }
 
-}
-
-
-.download-button {
-    display: block;
-    width: 220px;
-    margin: 20px auto 0;
-    padding: 10px 20px;
-    background-color: #000000;
-    color: white;
-    text-decoration: none;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    text-align: center;
-}
-
-    .download-button:hover {
-        background-color: #0056b3;
-    }
-
-
-
-</style>
+        .download-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-9B1MVRKKGT"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-9B1MVRKKGT');
-</script>
-
-
-
-
 <body>
-<!-- Navigation -->
-<nav id="navbar">
-<div class="nav-container">
-<a href="index.html" class="logo">HOME</a>
-<div class="menu-toggle" id="menuToggle">
-<span></span><span></span><span></span>
-</div>
-<ul class="nav-links" id="navLinks">
-<li><a href="index.html" class="nav-link">HOME</a></li>
-<li><a href="projects.html" class="nav-link">PROJECTS</a></li>
-</ul>
-</div>
-</nav>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9B1MVRKKGT"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-9B1MVRKKGT');
+    </script>
 
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Tegan Heffernan</a>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span><span></span><span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link">HOME</a></li>
+                <li><a href="projects.html" class="nav-link">PROJECTS</a></li>
+                <li><a href="work.html" class="nav-link">WORK EXPERIENCE</a></li>
+            </ul>
+        </div>
+    </nav>
 
-<!-- Images Section -->
-<section class="images-section">
-<br>
-<div class="images-container">
-<img src="images/profile.png" alt="Project Screenshot 1" class="project-image">
-</div>
+    <!-- Images Section -->
+    <section class="images-section">
+        <div class="images-container">
+            <img src="images/other/profile.png" alt="Project Screenshot 1" class="project-image">
+        </div>
+    </section>
 
+    <!-- Column Section -->
+    <section class="project-info">
+        <div class="info-container">
+            <div class="box left-box">
+                <h4>About Me:</h4>
+                <p style="text-align: left;">Hey there! <br><br> My name is Tegan, and I'm an enthusiastic second year systems engineering student at the University of Guelph. I'm passionate about all things technology, and my journey so far has involved exploring a diverse set of engineering fields including computer, mechanical, and software engineering. <br><br> This website is designed to highlight both the skills I've acquired so far, and also how I have put them into practice through some of the projects I've worked on. From hands on design challenges to collaborative programming, you'll see some examples of both my technical and practical skills.<br><br> What excites me the most is knowing the sheer amount of problems that can be solved with the utilization of technology.<br><br>My goal is to hopefully continue exploring technology, as well as gain and develop skills relating to it. On top of this, I really am hoping I can connect with many other similar people and engineers alike.<br><br>To make it more interesting, I've included some more personal details about me aswell!</p>
+                <br>
 
+                <h4>Engineering Interests:</h4>
+                <p>Computer Builds, Server Builds, Computer Hardware Design, Operating Systems, Artifical Intelligence, Machine Learning, Flask Development,</p>
+                <br>
 
-<!-- Column Section -->
-<section class="project-info">
+                <h4>Favourite Movies:</h4>
+                <p style="text-align: left;">Ford v Ferrari, No Country for Old Men.</p>
+                <br>
 
-<div class="info-container">
-<div class="box left-box">
-<h4>About Me:</h4>
-<p style="text-align: left;">Hey there! <br><br> My name is Tegan, and I'm an enthusiastic second year systems engineering student at the University of Guelph. I’m passionate about all things technology, and my journey so far has involved exploring a diverse set of engineering fields including computer, mechanical, and software engineering. <br><br> This website is designed to highlight both the skills I’ve acquired so far, and also how I have put them into practice through some of the projects I've worked on. From hands on design challenges to collaborative programming, you’ll see some examples of both my technical and practical skills.<br><br> What excites me the most is knowing the sheer amount of problems that can be solved with the utilization of technology.<br><br>My goal is to hopefully continue exploring technology, as well as gain and develop skills relating to it. On top of this, I really am hoping I can connect with many other similar people and engineers alike.<br><br>To make it more interesting, I've included some more personal details about me aswell!</p>
-<br />
+                <h4>Favourite Videogames:</h4>
+                <p style="text-align: left;">Project Zomboid, Counter-Strike, Call of Duty.</p>
+                <br>
 
-<h4><p style="text-align: left;">Engineering Interests:</p></h4>
-<p>Computer Builds, Server Builds, Computer Hardware Design, Operating Systems, Artifical Intelligence, Machine Learning, Flask Development, </p><br>
+                <h4>Favourite Songs:</h4>
+                <p style="text-align: left;">6AM - Channel Tres, Capsize - Big Black Delta, Benzi Box - MF Doom</p>
+                <br>
+                
+                <a href="C:\Users\teghe\personal_site\downloadables\tegans_resume.pdf" download="proposed-filename" class="download-button">
+                    View General Resume
+                </a>
+            </div>
+        </div>
+    </section>
 
-<h4><p style="text-align: left;">Favourite Movies:</p></h4>
-<p style="text-align: left;">Ford v Ferrari.</p><br>
+    <!-- Modal for viewing images -->
+    <div id="imageModal">
+        <img class="modal-content" id="modalImage">
+    </div>
 
-<h4><p style="text-align: left;">Favourite Videogames:</p></h4>
-<p style="text-align: left;">CS2</p><br>
+    <script>
+        const modal = document.getElementById('imageModal');
+        const modalImg = document.getElementById('modalImage');
 
-<h4><p style="text-align: left;">Favourite Songs:</p></h4>
-<p style="text-align: left;">Southern Nights - Glen Campbell</p><br>
+        document.querySelectorAll('.images-container img').forEach(img => {
+            img.addEventListener('click', () => {
+                modal.style.display = 'flex';
+                modalImg.src = img.src;
+            });
+        });
 
-<br/><br/>
-<a href="C:\Users\teghe\personal_site\downloadables\tegans_resume.pdf" download="proposed-filename" class="download-button">
-    View Temporary Resume
-</a>
+        modal.addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+    </script>
 
-</div>
-
-
-
-
-
-
-
-
-<!-- Modal for viewing images -->
-<div id="imageModal">
-<img class="modal-content" id="modalImage">
-</div>
-
-
-<script>
-const modal = document.getElementById('imageModal');
-const modalImg = document.getElementById('modalImage');
-
-document.querySelectorAll('.images-container img').forEach(img => {
-img.addEventListener('click', () => {
-modal.style.display = 'flex'; // show modal
-modalImg.src = img.src; // set clicked image
-});
-});
-
-// Clicking anywhere on the overlay closes the modal
-modal.addEventListener('click', () => {
-modal.style.display = 'none';
-});
-</script>
-
-
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

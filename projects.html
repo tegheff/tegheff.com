@@ -5,7 +5,6 @@
     <title>Projects – Tegan Heffernan</title>
     <link href="style.css" rel="stylesheet" />
 
-
     <style>
       body {
         background-color: white;
@@ -14,54 +13,42 @@
         overflow-x: hidden;
       }
 
-
-
-.project-divider {
-  width: 100%;        
-  height: 2px;      
-  background-color: black;
-  margin: 40px auto;    
-  border-radius: 2px;  
-}
-
-
+      .project-divider {
+        width: 100%;
+        height: 2px;
+        background-color: black;
+        margin: 40px auto;
+        border-radius: 2px;
+      }
     </style>
   </head>
 
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-9B1MVRKKGT"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-9B1MVRKKGT');
-</script>
-
-
-
-
-
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9B1MVRKKGT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-9B1MVRKKGT');
+  </script>
 
   <body>
     <!-- Navigation -->
     <nav id="navbar">
       <div class="nav-container">
-        <a href="index.html" class="logo">HOME</a>
+        <a href="index.html" class="logo">Tegan Heffernan</a>
         <div class="menu-toggle" id="menuToggle">
           <span></span><span></span><span></span>
         </div>
         <ul class="nav-links" id="navLinks">
           <li><a href="index.html" class="nav-link">HOME</a></li>
+          <li><a href="work.html" class="nav-link">WORK EXPERIENCE</a></li>
           <li><a href="about.html" class="nav-link">ABOUT</a></li>
         </ul>
       </div>
     </nav>
-
-
-
-   
 
     <!-- Hero Section -->
     <section class="hero" style="background: white">
@@ -71,11 +58,10 @@
       </div>
     </section>
 
+    <!-- Project 1 -->
+    <div class="project-divider"></div>
+    <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Project 1</h1>
 
-
-<div class="project-divider"></div>
-<h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Project 1</h1>
-<!-- SDN Start -->
     <section class="project-info">
       <div class="info-container">
         <div class="box left-box">
@@ -83,65 +69,52 @@
           <p>Basic Crime Analytic ML Model</p>
           <br />
 
+          <h4>Project Type</h4>
+          <p>Software Engineering</p>
+          <br />
 
-            <h4>Project Type</h4>
-            <p>Software Engineering</p>
-            <br />
+          <h4>Skills</h4>
+          <p>Machine Learning, Flask Development, Python, HTML, Excel</p>
+          <br />
 
-            <h4>Skills</h4>
-	    <p>Machine Learning, Flask Development, Python, HTML, Excel, </p>
-	    <br />
+          <h4>About</h4>
+          <p>
+            Utilized publicly available criminal data, released by the City of Los Angeles,
+            to build a machine learning model capable of predicting the type of crime being
+            committed based on diverse factors such as time, day, age, sex, location, and more.
+            This data includes every single crime committed from 2020 to 2025.
+          </p>
+          <br />
+          <p>
+            With over 1 million entries, it would be physically impossible to compile and compare
+            the relationships between this data by hand, which is why I utilized joblib, pandas, and numpy libraries to build a simple model.
+          </p>
+          <br />
 
-            <h4>About</h4>
-            <p>
-              Utilized publicly available criminal data, released by the City of Los Angeles,
-              to build a machine learning model capable of predicting the type of crime being
-              committed based on diverse factors such as time, day, age, sex, location, and more.
-              This data includes every single crime committed from 2020 to 2025.
-            </p>
-            <br />
-            <p>
-              With over 1 million entries, it would be physically impossible to compile and compare
-              the relationships between this data by hand, which is why I utilized joblib, pandas, and numpy libraries to build a simple model.
-            </p>
-
-	    <br />
-            <h4>Purpose</h4>
-            <p>
-              To explore and model relationships between perp data and their respective crime
-              committed. Allowed me to explore machine-learning possibilities in a way I found
-              interesting.<br/><br/>
-
-	      <p><b>Note: </b><u>I relied heavily on tutorials and online notes to complete this project. It was simply a way for me to dip my feet into the world of ML Modelling and gain a basic understanding of how these programs are structured.</u></p>
-            </p>
-
+          <h4>Purpose</h4>
+          <p>
+            To explore and model relationships between perp data and their respective crime
+            committed. Allowed me to explore machine-learning possibilities in a way I found
+            interesting.<br /><br />
+            <b>Note:</b> <u>I relied heavily on tutorials and online notes to complete this project. It was simply a way for me to dip my feet into the world of ML Modelling and gain a basic understanding of how these programs are structured.</u>
+          </p>
         </div>
-
-
       </div>
     </section>
 
+    <section class="images-section">
+      <h3>Images</h3>
+      <div class="images-container">
+        <img src="images/projects/project1/1.png" alt="Project Screenshot 1" class="project-image">
+        <img src="images/projects/project1/2.png" alt="Project Screenshot 2" class="project-image">
+        <img src="images/projects/project1/3.png" alt="Project Screenshot 3" class="project-image">
+      </div>
+    </section>
 
-<section class="images-section">
-  <h3>Images</h3>
-<div class="images-container">
-  <img src="images/project1/1.png" alt="Project Screenshot 1" class="project-image">
-  <img src="images/project1/2.png" alt="Project Screenshot 2" class="project-image">
-  <img src="images/project1/3.png" alt="Project Screenshot 3" class="project-image">
-</div>
+    <!-- Project 2 -->
+    <div class="project-divider"></div>
+    <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Project 2</h1>
 
-</section>
-<!-- SDN End -->
-
-
-
-
-
-
-
-<div class="project-divider"></div>
-<h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Project 2</h1>
-<!-- Bike Start -->
     <section class="project-info">
       <div class="info-container">
         <div class="box left-box">
@@ -149,53 +122,47 @@
           <p>Derelict Pit Bike Restoration</p>
           <br />
 
+          <h4>Project Type</h4>
+          <p>Mechanical Engineering</p>
+          <br />
 
-            <h4>Project Type</h4>
-            <p>Mechanical Engineering</p>
-            <br />
-	    
-            <h4>Skills</h4>
-	    <p>Welding, Machining, Cutting, CAD Design, Sprocket Ratio Calculation, Max Velocity Calculation, Project Planning</p>
-	    <br />
+          <h4>Skills</h4>
+          <p>Welding, Machining, Cutting, CAD Design, Sprocket Ratio Calculation, Max Velocity Calculation, Project Planning</p>
+          <br />
 
-            <h4>About</h4>
-            <p>
-	      Worked closely with a skilled senior practical engineer on the restoration of a derelict pitbike which was found
-	      abandoned in a field, left to rot. Planned and ran calculations beforehand. Sanded, cut, and utilized metalworking skills                	      to prepare the chasis to have the engine mounted.<br><br> 
-	      Once the engine had been mounted, calculated the ideal sprocket ratio to reach the desired theoretical maximum speed. Ran a
-	      chain from the engine's shaft to the back wheel, machined and developed a chain tensioner to ensure the belt did not slip 	      off our sprockets.  	
-            </p>
- 	    <br />
+          <h4>About</h4>
+          <p>
+            Worked closely with a skilled senior practical engineer on the restoration of a derelict pitbike which was found
+            abandoned in a field, left to rot. Planned and ran calculations beforehand. Sanded, cut, and utilized metalworking skills
+            to prepare the chasis to have the engine mounted.<br><br>
+            Once the engine had been mounted, calculated the ideal sprocket ratio to reach the desired theoretical maximum speed. Ran a
+            chain from the engine's shaft to the back wheel, machined and developed a chain tensioner to ensure the belt did not slip
+            off our sprockets.
+          </p>
+          <br />
 
-            <h4>Purpose</h4>
-            <p>
-              To develop and practice practical engineering skills such as welding and general metalworking.
-            </p>
-
-        </div>
-
-
+          <h4>Purpose</h4>
+          <p>
+            To develop and practice practical engineering skills such as welding and general metalworking.
+          </p>
         </div>
       </div>
     </section>
 
+    <section class="images-section">
+      <h3>Images</h3>
+      <div class="images-container">
+        <img src="images/projects/project2/1.png" alt="Project Screenshot 1" class="project-image">
+        <img src="images/projects/project2/2.png" alt="Project Screenshot 2" class="project-image">
+        <img src="images/projects/project2/3.png" alt="Project Screenshot 3" class="project-image">
+        <img src="images/projects/project2/4.png" alt="Project Screenshot 4" class="project-image">
+      </div>
+    </section>
 
-<section class="images-section">
-  <h3>Images</h3>
-<div class="images-container">
-  <img src="images/project2/1.png" alt="Project Screenshot 1" class="project-image">
-  <img src="images/project2/2.png" alt="Project Screenshot 2" class="project-image">
-  <img src="images/project2/3.png" alt="Project Screenshot 3" class="project-image">
-  <img src="images/project2/4.png" alt="Project Screenshot 4" class="project-image">
-</div>
+    <!-- Project 3 -->
+    <div class="project-divider"></div>
+    <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Project 3</h1>
 
-</section>
-<!-- Bike End -->
-
-
-<!-- Serv Start -->
-<div class="project-divider"></div>
-<h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Project 3</h1>
     <section class="project-info">
       <div class="info-container">
         <div class="box left-box">
@@ -203,87 +170,160 @@
           <p>Custom Server Build</p>
           <br />
 
+          <h4>Project Type</h4>
+          <p>Computer & Software Engineering</p>
+          <br />
 
-            <h4>Project Type</h4>
-            <p>Computer & Software Engineering.</p>
-            <br />
-	    
-            <h4>Skills</h4>
-	    <p>Computer Building, Operating System Implementation, Firmware and Software Implementation, Soldering. Software Development, 	       Backend Development, HTML Development.</p>
-	    <br />
+          <h4>Skills</h4>
+          <p>Computer Building, Operating System Implementation, Firmware and Software Implementation, Soldering, Software Development, Backend Development, HTML Development</p>
+          <br />
 
-            <h4>About</h4>
-            <p>
-	      Utilized both scrap and new computer parts, to put together a custom server to host numerous sites and applications. Hosts 
-	      my own personal HTML applications, as well as multiple client webpages. Used software like NGROK to host without having to 
-	      go through my own IPV4 address.<br><br>
-              Created custom .BAT files to handle starting up server applications automatically. Created 
-	      a custom HTML site with backend code to allow for further ease in booting of server side software, rather than having to       	      constantly use terminal commands anytime I want to boot software.
-            </p>
- 	    <br />
+          <h4>About</h4>
+          <p>
+            Utilized both scrap and new computer parts, to put together a custom server to host numerous sites and applications. Hosts
+            my own personal HTML applications, as well as multiple client webpages. Used software like NGROK to host without having to
+            go through my own IPV4 address.<br><br>
+            Created custom .BAT files to handle starting up server applications automatically. Created
+            a custom HTML site with backend code to allow for further ease in booting of server side software, rather than having to
+            constantly use terminal commands anytime I want to boot software.
+          </p>
+          <br />
 
-            <h4>Purpose</h4>
-            <p>
-              To allow for the hosting of my own projects without the need of external assistance.
-            </p>
-
-        </div>
-
-
+          <h4>Purpose</h4>
+          <p>
+            To allow for the hosting of my own projects without the need of external assistance.
+          </p>
         </div>
       </div>
     </section>
 
+    <section class="images-section">
+      <h3>Images</h3>
+      <div class="images-container">
+        <img src="images/projects/project3/1.png" alt="Project Screenshot 1" class="project-image">
+        <img src="images/projects/project3/2.png" alt="Project Screenshot 2" class="project-image">
+      </div>
+    </section>
 
-<section class="images-section">
-  <h3>Images</h3>
-<div class="images-container">
-  <img src="images/project3/1.png" alt="Project Screenshot 1" class="project-image">
-  <img src="images/project3/2.png" alt="Project Screenshot 2" class="project-image">
-</div>
+    <div class="project-divider"></div>
 
-</section>
-<div class="project-divider"></div>
-<!-- Serv End -->
+    <!-- Project 4 -->
+    <div class="project-divider"></div>
+    <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Project 4</h1>
 
+    <section class="project-info">
+      <div class="info-container">
+        <div class="box left-box">
+          <h4>Project Name</h4>
+          <p>ENGG*2100 - Reverse Engineering</p>
+          <br />
 
+          <h4>Project Type</h4>
+          <p>Mechanical Engineering</p>
+          <br />
 
+          <h4>Skills</h4>
+          <p>Solidworks, Team Communications, Problem Solving, Measurement Acquirement.</p>
+          <br />
 
+          <h4>About</h4>
+          <p>
+            Accurately measured and modeled a mechanical assembly, using Solidworks, based on a physical product. The product was a 12-in-1 STEM toy, which included various mechanical components such as gears, linkages, a motor, a solar panel, and other various mechanical parts. The goal was to reverse engineer the product by taking precise measurements of each component and then creating a detailed 3D model of the entire assembly using Solidworks.<br><br>
+          </p>
+          <p>
+            This project required a high attention to detail and precise measurement, as well as proficiency in using Solidworks to create accurate parts. The final product was a comprehensive Solidworks assembly and animation that accurately represented the original product, demonstrating the ability to reverse engineer mechanical systems.
+          </p>
+          <br />
 
+          <h4>Purpose</h4>
+          <p>
+            To develop Solidworks skills and gain experience in reverse engineering mechanical systems.<br /><br />
+          </p>
+        </div>
+      </div>
+    </section>
 
+    <section class="images-section">
+      <h3>Images</h3>
+      <div class="images-container">
+        <img src="images/projects/project4/1.png" alt="Project Screenshot 1" class="project-image">
+        <img src="images/projects/project4/2.png" alt="Project Screenshot 2" class="project-image">
+        <img src="images/projects/project4/3.png" alt="Project Screenshot 3" class="project-image">
+        <img src="images/projects/project4/4.png" alt="Project Screenshot 4" class="project-image">
+      </div>
+    </section>
 
+    <div class="project-divider"></div>
 
+        <!-- Project 5 -->
+    <div class="project-divider"></div>
+    <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Project 5</h1>
 
+    <section class="project-info">
+      <div class="info-container">
+        <div class="box left-box">
+          <h4>Project Name</h4>
+          <p>ENGG*2100 - Kinder Design Project</p>
+          <br />
 
+          <h4>Project Type</h4>
+          <p>Mechanical Engineering</p>
+          <br />
 
+          <h4>Skills</h4>
+          <p>Solidworks, Team Communications, Problem Solving, Measurement Acquirement, Project Planning, Decal Design, Visual Design, Video Editing.</p>
+          <br />
 
+          <h4>About</h4>
+          <p>
+            Worked within a multidisciplinary engineering team to design and develop a children's toy. Honed project management and design skills throughout the development process, resulting in proficiency with team based collaboration. Handled design of the decal and visual elements for the toy, aswell as marketing material including filming and editing of an advertisement.<br><br>
+          </p>
+          <p>
+            Constant meeting and planning with the team was required to ensure the project was progressing smoothly and that all members were on the same page. The final product was a fully functional children's toy, complete with a visually appealing design and an engaging advertisement to promote it.
+          </p>
+          <br />
 
+          <h4>Purpose</h4>
+          <p>
+            To develop Solidworks skills and gain experience in reverse engineering mechanical systems.<br /><br />
+          </p>
+        </div>
+      </div>
+    </section>
 
-<!-- Modal for viewing images start -->
-<div id="imageModal">
-  <img class="modal-content" id="modalImage">
-</div>
+    <section class="images-section">
+      <h3>Images</h3>
+      <div class="images-container">
+        <img src="images/projects/project5/1.jpg" alt="Project Screenshot 1" class="project-image">
+        <img src="images/projects/project5/2.jpg" alt="Project Screenshot 2" class="project-image">
+        <img src="images/projects/project5/3.jpg" alt="Project Screenshot 3" class="project-image">
+        <img src="images/projects/project5/4.gif" alt="Project GIF 4" class="project-image">
+      </div>
+    </section>
 
+    <div class="project-divider"></div>
 
-<script>
-const modal = document.getElementById('imageModal');
-const modalImg = document.getElementById('modalImage');
+    <!-- Modal for viewing images -->
+    <div id="imageModal">
+      <img class="modal-content" id="modalImage">
+    </div>
 
-document.querySelectorAll('.images-container img').forEach(img => {
-  img.addEventListener('click', () => {
-    modal.style.display = 'flex';  // show modal
-    modalImg.src = img.src;         // set clicked image
-  });
-});
+    <script>
+      const modal = document.getElementById('imageModal');
+      const modalImg = document.getElementById('modalImage');
 
-// Clicking anywhere on the overlay closes the modal
-modal.addEventListener('click', () => {
-  modal.style.display = 'none';
-});
-</script>
-<!-- Modal for viewing images end -->
+      document.querySelectorAll('.images-container img').forEach(img => {
+        img.addEventListener('click', () => {
+          modal.style.display = 'flex';
+          modalImg.src = img.src;
+        });
+      });
 
+      modal.addEventListener('click', () => {
+        modal.style.display = 'none';
+      });
+    </script>
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

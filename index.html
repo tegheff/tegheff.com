@@ -7,27 +7,21 @@
     <link href="style.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
-
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9B1MVRKKGT"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-9B1MVRKKGT');
+    </script>
 </head>
-
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-9B1MVRKKGT"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-9B1MVRKKGT');
-</script>
-
-
 
 <body>
     <!-- Navigation -->
     <nav id="navbar">
         <div class="nav-container">
-            <a href="#home" class="logo">TEGHEFF</a>
+            <a href="#home" class="logo">Tegan Heffernan</a>
             <div class="menu-toggle" id="menuToggle">
                 <span></span>
                 <span></span>
@@ -35,7 +29,7 @@
             </div>
             <ul class="nav-links" id="navLinks">
                 <li><a href="projects.html" class="nav-link">PROJECTS</a></li>
-		<li><a href="work.html" class="nav-link">WORK EXPERIENCE</a></li>
+                <li><a href="work.html" class="nav-link">WORK EXPERIENCE</a></li>
                 <li><a href="about.html" class="nav-link">ABOUT</a></li>
             </ul>
         </div>
@@ -43,7 +37,6 @@
 
     <!-- Section 1: Hero -->
     <section id="home" class="hero">
-        <!-- Animated Objects (Reduced) -->
         <div class="floating-objects">
             <div class="floating-circle"></div>
             <div class="floating-circle"></div>
@@ -55,28 +48,25 @@
         <div class="hero-content">
             <h1>Tegan Heffernan</h1>
             <p class="subtitle">Systems Engineer</p>
-            
         </div>
     </section>
 
-    <!-- Section 2: About - Mixed Layouts -->
+    <!-- Section 2: About -->
     <section id="about" class="about">
         <div class="container">
-            <!-- Introduction with large quote -->
             <div class="about-intro fade-in">
                 <div class="quote-block">
                     <span class="quote-mark">"</span>
                     <h3>Scientists investigate that which already is; engineers create that which has never been.</h3>
                     <div class="quote-author">
                         <span class="author-line"></span>
-                        <p>Albert Einstein	</p>
+                        <p>Albert Einstein</p>
                     </div>
                 </div>
             </div>
 
             <div class="black-line"></div>
 
-            <!-- Stats Section -->
             <div class="stats-grid fade-in">
                 <div class="stat-item">
                     <div class="stat-number">18</div>
@@ -99,10 +89,10 @@
                     <div class="stat-decoration"></div>
                 </div>
             </div>
+        </div>
+    </section>
 
-
-
-    <!-- Section 3: Services - Asymmetric Grid -->
+    <!-- Section 3: Services -->
     <section id="services" class="services">
         <div class="container">
             <div class="services-header fade-in">
@@ -112,8 +102,7 @@
             <div class="asymmetric-grid fade-in">
                 <div class="service-large">
                     <h3>Software Design</h3>
-                    <p>From custom firmwares, to writing operating system .bat files. I've had my hand in developing some software for different purposes. I have experience with different programming languages varying from C, Java, VHDL, Verilog, HTML, JavaScript, and more. Working closely with firmware and operating systems to allow utilzation of hardware is my jam. </p>
-                    
+                    <p>From custom firmwares, to writing operating system .bat files. I've had my hand in developing some software for different purposes. I have experience with different programming languages varying from C, Java, VHDL, Verilog, HTML, JavaScript, and more. Working closely with firmware and operating systems to allow utilzation of hardware is my jam.</p>
                 </div>
                 <div class="service-small">
                     <div class="service-number">01</div>
@@ -129,7 +118,6 @@
                 <div class="service-large">
                     <h3>Computer Hardware Design</h3>
                     <p>Throughout my experience so far, I've worked closely with Windows operating systems to build and rig fully functional computers and servers for numerous different purposes. I've also worked briefly with software like Intel ModelSim and AMD Vivado to code logic units with VHDL and Verilog.</p>
-                    
                 </div>
             </div>
             
@@ -137,14 +125,12 @@
                 <div class="service-large">
                     <h3>Mechanical Design</h3>
                     <p>Despite being a systems engineer. I've dabbled in mechanical engineering projects before. Over the summer of 2025, I designed and manufactured a fully functional pitbike. I welded and cut pieces of metal, as well as partake in other relevent practices.</p>
-                    
                 </div>
                 <div class="service-small">
                     <div class="service-number">03</div>
                     <h4>Mechanical Builds</h4>
                 </div>
             </div>
-        
 
             <div class="asymmetric-grid reverse fade-in">
                 <div class="service-small">
@@ -154,14 +140,10 @@
                 <div class="service-large">
                     <h3>Web Design</h3>
                     <p>I've designed and developed multiple websites, including this one, for a variety of purposes. My work includes writing basic JavaScript and using prebuilt Google software to track website traffic. I've also utilized free prebuilt CSS frameworks to add animations, and have used software like EmailJS to handle external email handling.</p>
-                    
                 </div>
             </div>
-	</div>
+        </div>
     </section>
-
-
-
 
     <!-- Section 4: Contact -->
     <section id="contact" class="contact">
@@ -172,48 +154,39 @@
                     <div class="info-item">
                         <h4>Email:</h4>
                         <p>tegheff@icloud.com</p>
-			<p style="margin-left: 65px;"><u>or</u></p>
-			<p>Use the UI to the right.</p>
-
+                        <p style="margin-left: 65px;"><u>or</u></p>
+                        <p>Use the UI to the right.</p>
                     </div>
                 </div>
                 
                 <div class="contact-divider"></div>
                 
                 <div class="contact-form">
-    <form id="contact-form">
-        <div class="form-group">
-            <input type="text" name="user_name" placeholder=" " required>
-            <label>Your Name</label>
-        </div>
-        <div class="form-group">
-            <input type="email" name="user_email" placeholder=" " required>
-            <label>Your Email</label>
-        </div>
-        <div class="form-group">
-            <textarea name="message" rows="4" placeholder=" " required></textarea>
-            <label>Your Message</label>
-        </div>
-        <button type="submit" class="submit-btn">Send</button>
-    </form>
-</div>
-
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" name="user_name" placeholder=" " required>
+                            <label>Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="user_email" placeholder=" " required>
+                            <label>Your Email</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" rows="4" placeholder=" " required></textarea>
+                            <label>Your Message</label>
+                        </div>
+                        <button type="submit" class="submit-btn">Send</button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-		<p>v0.9</p>
+        <p>v0.9</p>
     </footer>
 
-
-
-
-
-
-
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
